@@ -7,10 +7,6 @@
   --site-gray: rgba(189, 194, 230, 0.356);
 }
 
-/* * {
-  border: 1px solid black;
-} */
-
 body,
 html {
   height: 100%;
@@ -59,7 +55,7 @@ body {
 }
 
 .search-bar:focus-visible {
-  outline: 1px solid var(--site-hover-blue);
+  outline: 2px solid var(--site-hover-blue);
 }
 
 .notification:hover {
@@ -129,6 +125,7 @@ body {
 
 .option-buttons:hover {
   background-color: var(--site-hover-blue);
+  border: 1px solid black;
 }
 
 .side-menu {
@@ -203,7 +200,53 @@ img {
 }
 
 .left-content {
-  grid-template-rows: 40px 10fr;
+  grid-template-rows: 60px 10fr;
+  padding-left: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.box-area {
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.box {
+  background-color: white;
+  padding: 10px;
+  border-left: 10px solid rgb(255, 157, 45);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.box p {
+  color: gray;
+}
+
+.icons-area {
+  margin-top: auto;
+  align-self: end;
+}
+
+.eye {
+  content: url(images/eye-outline.svg);
+}
+.star {
+  content: url(images/star-outline.svg);
+}
+.link {
+  content: url(images/link-variant.svg);
+}
+
+img.icon {
+  width: 20px;
+  height: 20px;
 }
 
 .right-content {
@@ -213,4 +256,6 @@ img {
 .heading {
   display: grid;
   place-content: end left;
+  font-size: 1.2rem;
+  padding-bottom: 10px;
 }
