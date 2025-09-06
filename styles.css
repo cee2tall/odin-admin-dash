@@ -2,6 +2,7 @@
 
 :root {
   --white-color: rgb(231, 229, 229);
+  --site-blue: rgb(40, 138, 212);
 }
 
 /* * {
@@ -45,7 +46,7 @@ body {
 }
 
 .side-menu {
-  background-color: rgb(59, 163, 218);
+  background-color: var(--site-blue);
   grid-area: 1 / 1 / 3 / 2;
   grid-template-rows: 3fr 1fr;
   color: var(--white-color);
@@ -54,12 +55,16 @@ body {
 .side-top {
   grid-template-rows: 1fr 3fr 1fr;
   gap: 20px;
-  padding-left: 10px;
+  padding: 0 20px;
 }
 
-img.c-logo {
-  width: 45px;
-  fill: white;
+.side-top a {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.side-top svg {
+  fill: var(--white-color);
 }
 
 .logo-text {
@@ -75,7 +80,7 @@ img.c-logo {
 
 .logo-text div {
   display: flex;
-  gap: 10px;
+  gap: 5px;
   place-content: center center;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -83,6 +88,17 @@ img.c-logo {
 
 .side-pages {
   grid-template-rows: repeat(6, minmax(20px, 45px));
+}
+
+.side-pages svg {
+  width: 30px;
+}
+
+.side-pages div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 }
 
 .side-options {
