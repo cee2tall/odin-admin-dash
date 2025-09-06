@@ -47,6 +47,8 @@ body {
   grid-template-rows: 55px 1fr;
   box-shadow: 0 5px 5px rgb(199, 198, 198);
   padding-left: 30px;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 .search-bar {
@@ -69,6 +71,22 @@ body {
   width: 50px;
 }
 
+.user-big {
+  width: 70px;
+}
+
+.user-intro {
+  grid-template-columns: 70px 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.user-intro p {
+  margin: 0;
+}
+
 .profile {
   display: flex;
   gap: 15px;
@@ -77,17 +95,40 @@ body {
   padding-right: 50px;
 }
 
-.profile span {
-  font-weight: bold;
-}
-
-.top-dash {
+.top-dash,
+.bottom-dash {
   grid-template-columns: 2fr 1fr;
 }
 
 .search {
   grid-template-columns: 30px 1fr;
   align-items: center;
+}
+
+.bottom-dash .username {
+  font-size: 1.4rem;
+}
+
+.user-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px 0 20px;
+}
+
+.option-buttons {
+  width: 20%;
+  height: 25%;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  background-color: var(--site-blue);
+  border-radius: 15px;
+}
+
+.option-buttons:hover {
+  background-color: var(--site-hover-blue);
 }
 
 .side-menu {
