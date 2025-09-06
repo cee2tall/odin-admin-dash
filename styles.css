@@ -52,25 +52,25 @@ body {
   color: var(--white-color);
 }
 
-.side-top {
-  grid-template-rows: 1fr 3fr 1fr;
-  gap: 20px;
-  padding: 0 20px;
-}
-
-.side-top a {
+.side-menu a {
   font-size: 1.2rem;
   font-weight: bold;
 }
 
-.side-top svg {
+.side-menu :nth-child(1 of .button-section) {
+  margin-top: 30px;
+}
+
+.button-section svg,
+.logo-text svg {
   fill: var(--white-color);
 }
 
 .logo-text {
   place-content: center left;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
+  padding: 30px 0px 20px 40px;
 }
 
 .logo-text h1 {
@@ -86,23 +86,23 @@ body {
   grid-template-rows: 1fr;
 }
 
-.side-pages {
-  grid-template-rows: repeat(6, minmax(20px, 45px));
+.side-top-margin {
+  margin-top: 30px;
 }
 
-.side-pages svg {
+.button-section {
+  padding: 10px 40px;
+}
+
+.button-section svg {
   width: 30px;
 }
 
-.side-pages div {
+.side-menu .button-section {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
-}
-
-.side-options {
-  grid-template-rows: repeat(3, minmax(20px, 45px));
 }
 
 .content {
