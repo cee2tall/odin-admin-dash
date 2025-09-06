@@ -7,14 +7,23 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="dashboard"></div>
-      <div class="side-menu">
-        <div class="side-top">
-          <div class="logo-text">
+    <div class="grid container">
+      <div class="grid dashboard">
+        <div class="top-dash">
+          <div class="search"></div>
+          <div class="profile"></div>
+        </div>
+        <div class="bottom-dash">
+          <div class="user-intro"></div>
+          <div class="user-options"></div>
+        </div>
+      </div>
+      <div class="grid side-menu">
+        <div class="grid side-top">
+          <div class="grid logo-text">
             <span><img src="#" alt="|" />Dashboard</span>
           </div>
-          <div class="side-pages">
+          <div class="grid side-pages">
             <a href="#" class="side-button">Home</a
             ><a href="#" class="side-button">Profile</a
             ><a href="#" class="side-button">Messages</a
@@ -22,17 +31,39 @@
             ><a href="#" class="side-button">Tasks</a>
             <a href="#" class="side-button">Communities</a>
           </div>
-          <div class="side-options">
+          <div class="grid side-options">
             <a href="" class="side-button">Settings</a
             ><a href="" class="side-button">Support</a
             ><a href="" class="side-button">Privacy</a>
           </div>
         </div>
-        <div></div>
+        <div style="display: none">
+          This is just to have the empty space at the side menu
+        </div>
       </div>
-      <div class="content">
-        <div class="left-content"></div>
-        <div class="right-content"></div>
+      <div class="grid content">
+        <div class="grid left-content">
+          <div class="heading">Your Projects</div>
+          <div class="box-area">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+          </div>
+        </div>
+        <div class="grid right-content">
+          <div class="heading">Announcements</div>
+          <div class="announcements"></div>
+          <div class="heading">Trending</div>
+          <div>
+            <div class="trending"></div>
+            <div class="trending"></div>
+            <div class="trending"></div>
+            <div class="trending"></div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
