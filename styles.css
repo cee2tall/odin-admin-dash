@@ -3,6 +3,8 @@
 :root {
   --white-color: rgb(231, 229, 229);
   --site-blue: rgb(40, 138, 212);
+  --site-hover-blue: rgb(56, 146, 214);
+  --site-gray: rgba(189, 194, 230, 0.356);
 }
 
 /* * {
@@ -42,7 +44,50 @@ body {
 
 .dashboard {
   grid-area: 1 / 2 / 2 / 3;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 55px 1fr;
+  box-shadow: 0 5px 5px rgb(199, 198, 198);
+  padding-left: 30px;
+}
+
+.search-bar {
+  background-color: var(--site-gray);
+  border: none;
+  border-radius: 20px;
+  height: 60%;
+}
+
+.search-bar:focus-visible {
+  outline: 1px solid var(--site-hover-blue);
+}
+
+.notification:hover {
+  background-color: rgb(231, 231, 231);
+  border-radius: 5px;
+}
+
+.user-small {
+  width: 50px;
+}
+
+.profile {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: end;
+  padding-right: 50px;
+}
+
+.profile span {
+  font-weight: bold;
+}
+
+.top-dash {
+  grid-template-columns: 2fr 1fr;
+}
+
+.search {
+  grid-template-columns: 30px 1fr;
+  align-items: center;
 }
 
 .side-menu {
@@ -92,9 +137,14 @@ body {
 
 .button-section {
   padding: 10px 40px;
+  border-radius: 15px;
+}
+.button-section:hover {
+  background-color: var(--site-hover-blue);
 }
 
-.button-section svg {
+svg,
+img {
   width: 30px;
 }
 
@@ -108,6 +158,7 @@ body {
 .content {
   grid-area: 2 / 2 / 3 / 3;
   grid-template-columns: 3fr 1fr;
+  background-color: var(--site-gray);
 }
 
 .left-content {
