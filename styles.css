@@ -254,6 +254,7 @@ img.icon {
 .right-content {
   grid-template-rows: 60px 1fr 60px 1fr;
   padding-bottom: 15px;
+  padding-right: 20px;
 }
 
 .heading {
@@ -285,4 +286,25 @@ img.icon {
   font-size: 0.8rem;
   color: gray;
   margin-top: 5px;
+}
+
+.trending-icon {
+  content: url(images/account-box.svg);
+}
+
+.trending span {
+  font-size: 0.8rem;
+}
+
+.trending p {
+  color: gray;
+  margin-top: 5px;
+}
+
+.trending {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: start;
+  margin-top: 8px;
 }
